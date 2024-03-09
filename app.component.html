@@ -1,0 +1,275 @@
+<style>
+  :host {
+    --bright-blue: oklch(51.01% 0.274 263.83);
+    --electric-violet: oklch(53.18% 0.28 296.97);
+    --french-violet: oklch(47.66% 0.246 305.88);
+    --vivid-pink: oklch(69.02% 0.277 332.77);
+    --hot-red: oklch(61.42% 0.238 15.34);
+    --orange-red: oklch(63.32% 0.24 31.68);
+
+    --gray-900: oklch(19.37% 0.006 300.98);
+    --gray-700: oklch(36.98% 0.014 302.71);
+    --gray-400: oklch(70.9% 0.015 304.04);
+
+    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+      180deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 70%,
+      var(--electric-violet) 100%
+    );
+
+
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+
+
+  main {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 2.5rem;
+    box-sizing: inherit;
+    position: relative;
+    .left {
+  margin-right: 40px;
+}
+.left h1 {
+  font-size: 32px;}
+.right-side h1 {
+  font-size: 32px;
+  }
+  .right-side h2,
+.right-side h3,
+.right-side h4 {
+  font-size: 28px;
+}
+.left p,
+.right-side p,
+.left li,
+.right-side br,
+.right-side li {
+  font-size: 20px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left h1 {
+  margin-top: 20px;
+}
+
+.card-img-top {
+  margin-top: 20px;
+}
+
+  }
+
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 4rem;
+  }
+
+  .content h1 {
+    margin-top: 2.5rem;
+  }
+
+  .content p {
+    margin-top: 2rem;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .social-links path {
+    transition: fill 0.3s ease;
+    fill: var(--gray-400);
+  }
+
+  .social-links a:hover svg path {
+    fill: var(--gray-900);
+  }
+
+  @media screen and (max-width: 650px) {
+    .content {
+      flex-direction: column;
+      width: max-content;
+    }
+
+    .divider {
+      height: 1px;
+      width: 100%;
+      background: var(--red-to-pink-to-purple-horizontal-gradient);
+      margin-block: 1.5rem;
+    }
+  }
+</style>
+<body>
+  <div class="center-third">
+<style>
+    .center-third {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      left: 33.33%;
+      transform: translateX(-33.33%);
+    }
+  </style>
+
+<main class="main">
+  <div class="content">
+    <div class="left">
+      <h1>Nguyễn Anh Nghĩa</h1>
+      <svg class="card-img-top" width="325" height="325" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <image href="assets/download.jpg" width="100" height="100" />
+      </svg>
+      <style>
+        .card-img-top image {
+        mask: url(#roundedMask);
+        -webkit-mask: url(#roundedMask);
+        }
+
+        .card-img-top {
+        border-radius: 50%;
+        }
+      </style>
+      <p align="left"> <a href="assets/Resume.pdf" target="_blank">Resume</a>|
+      <a href="https://www.facebook.com/profile.php?id=100022289754032">Facebook </a>|
+      <a href="https://github.com/anhnghia2011">GitHub</a> </p>
+      <p>I am studying at Saigon University, my major here is Information Technology.</p>
+      <p>For the information technology industry, I find it quite interesting with website programming, so most of the time I learn about software technologies.</p>
+    </div>
+    <div class="right-side">
+    <h1>Portfolio</h1>
+    <hr>
+      <h2>Skills</h2>
+      <p>Using basic techniques to build software, websites incorporate several technologies such as asp.net, Angular, Stringboot,... </p>
+        <div class="profess-cover row no-margin">
+  <div class="col-md-6">
+    <div class="prog-row row">
+      <div class="col-sm-6">
+        Java
+      </div>
+      <div class="col-sm-6">
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" [style.width]="'65%'" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row prog-row">
+      <div class="col-sm-6">
+        PHP
+      </div>
+      <div class="col-sm-6">
+        <div class="progress">
+          <div class="progress-bar bg-info" role="progressbar" [style.width]="'85%'" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="row prog-row">
+      <div class="col-sm-6">
+        Web Design
+      </div>
+      <div class="col-sm-6">
+        <div class="progress">
+          <div class="progress-bar bg-warning" role="progressbar" [style.width]="'75%'" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row prog-row">
+      <div class="col-sm-6">
+        C#
+      </div>
+      <div class="col-sm-6">
+        <div class="progress">
+          <div class="progress-bar bg-danger" role="progressbar" [style.width]="'55%'" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<h3>Project E-Learning-Online</h3>
+<br>Using HTML/CSS, StringBoot, SQL Server,..<br />
+<a href="https://github.com/hieugit123/E-Learning-Online">github.com/hieugit123/E-Learning-Onlineb</a>
+<ul>
+      <li>Dự án làm việc nhóm cho học phần Chuyên đề J2EE.</li>
+      <li>Học được cách sử dụng PHP và xử lý dữ liệu Back-end với SQLServer.</li>
+</ul>
+<svg class="image-png" width="325" height="325" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <image href="assets/01.png" width="100" height="100" />
+      </svg>
+<hr>
+<h4>Project MiniStoreManagement</h4>
+<br>Using c#,windows Form,..<br />
+<a href="https://github.com/ngahehz/MiniStoreManagement">github.com/ngahehz/MiniStoreManagement</a>
+<ul>
+      <li>Dự án làm việc nhóm cho học phần 	Ngôn ngữ lập trình C#.</li>
+      <li>Làm quen với C#.</li>
+</ul>
+
+
+      <div class="social-links">
+        <a
+          href="https://github.com/anhnghia2011"
+          aria-label="Github"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="https://github.com/"
+            alt="Github"
+          >
+            <path
+              d="M12.3047 0C5.50634 0 0 5.50942 0 12.3047C0 17.7423 3.52529 22.3535 8.41332 23.9787C9.02856 24.0946 9.25414 23.7142 9.25414 23.3871C9.25414 23.0949 9.24389 22.3207 9.23876 21.2953C5.81601 22.0377 5.09414 19.6444 5.09414 19.6444C4.53427 18.2243 3.72524 17.8449 3.72524 17.8449C2.61064 17.082 3.81137 17.0973 3.81137 17.0973C5.04697 17.1835 5.69604 18.3647 5.69604 18.3647C6.79321 20.2463 8.57636 19.7029 9.27978 19.3881C9.39052 18.5924 9.70736 18.0499 10.0591 17.7423C7.32641 17.4347 4.45429 16.3765 4.45429 11.6618C4.45429 10.3185 4.9311 9.22133 5.72065 8.36C5.58222 8.04931 5.16694 6.79833 5.82831 5.10337C5.82831 5.10337 6.85883 4.77319 9.2121 6.36459C10.1965 6.09082 11.2424 5.95546 12.2883 5.94931C13.3342 5.95546 14.3801 6.09082 15.3644 6.36459C17.7023 4.77319 18.7328 5.10337 18.7328 5.10337C19.3942 6.79833 18.9789 8.04931 18.8559 8.36C19.6403 9.22133 20.1171 10.3185 20.1171 11.6618C20.1171 16.3888 17.2409 17.4296 14.5031 17.7321C14.9338 18.1012 15.3337 18.8559 15.3337 20.0084C15.3337 21.6552 15.3183 22.978 15.3183 23.3779C15.3183 23.7009 15.5336 24.0854 16.1642 23.9623C21.0871 22.3484 24.6094 17.7341 24.6094 12.3047C24.6094 5.50942 19.0999 0 12.3047 0Z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100022289754032"
+          aria-label="Facebook"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Facebook">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M28.062 0H.938C.42 0 0 .42 0 .938v18.124c0 .517.42.938.938.938h9.89v-7.254H8.275V9.485h2.553V7.265c0-2.532 1.547-3.91 3.8-3.91 1.076 0 2.004.08 2.275.115v2.647h-1.562c-1.226 0-1.465.583-1.465 1.44v1.886h2.937l-.61 3.08h-2.327V20h4.565c.518 0 .938-.42.938-.938V.937c0-.518-.42-.937-.938-.937z" fill="#3B5998"/>
+          </svg>
+
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+<router-outlet />
+</div>
+</body>
+
